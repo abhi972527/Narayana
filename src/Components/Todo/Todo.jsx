@@ -34,6 +34,12 @@ const Todo = () => {
     }
 
 
+    const clearList = () => {
+        setnewData([])
+        console.log("Deleted");
+    }
+
+
 
     return (
         <div>
@@ -64,6 +70,8 @@ const Todo = () => {
                          
                         </Scrollbars>
                     </div>
+                    
+                    <button className="clear_btn" onClick={clearList}>Clear</button>
                 </div>
             </div>
         </div>

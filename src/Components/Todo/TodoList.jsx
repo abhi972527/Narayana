@@ -8,7 +8,6 @@ const TodoList = (props) => {
     return (
         <div>
             <div className="todo_style">
-                <input type="checkbox" />
                 <button
                     className="fa_times"
                     onClick={() => {
@@ -17,6 +16,7 @@ const TodoList = (props) => {
                 >
                     X
                 </button>
+                <input type="checkbox" className="dataInput" id={props.id}/>
                 <li >{props.val}</li>
             </div>
         </div>
