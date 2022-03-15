@@ -8,7 +8,7 @@ const TodoList = (props) => {
     return (
         <div>
             <div className="todo_style">
-                {/* <input type="checkbox" /> */}
+                <input type="checkbox" />
                 <button
                     className="fa_times"
                     onClick={() => {
